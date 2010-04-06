@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE glade-interface SYSTEM "glade-2.0.dtd">
+<!--Generated with glade3 3.4.3 on Wed Mar 10 17:17:22 2010 -->
+<glade-interface>
+  <widget class="GtkWindow" id="VentanaPrincipal">
+    <property name="width_request">250</property>
+    <property name="height_request">250</property>
+    <property name="visible">True</property>
+    <property name="title" translatable="yes">Tiempo Py</property>
+    <signal name="destroy" handler="on_VentanaPrincipal_destroy"/>
+    <child>
+      <widget class="GtkFixed" id="fixed1">
+        <property name="visible">True</property>
+        <child>
+          <widget class="GtkImage" id="image1">
+            <property name="width_request">259</property>
+            <property name="height_request">250</property>
+            <property name="visible">True</property>
+            <property name="pixbuf">evoluciongeek.PNG</property>
+          </widget>
+        </child>
+        <child>
+          <widget class="GtkLabel" id="EtiquetaPrincipal">
+            <property name="width_request">129</property>
+            <property name="height_request">36</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">control</property>
+          </widget>
+          <packing>
+            <property name="x">62</property>
+            <property name="y">25</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkLabel" id="etiquetaTiempo">
+            <property name="width_request">90</property>
+            <property name="height_request">36</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Tiempo</property>
+          </widget>
+          <packing>
+            <property name="x">23</property>
+            <property name="y">140</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkEntry" id="EntradaDeTiempo">
+            <property name="width_request">96</property>
+            <property name="height_request">33</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="has_frame">False</property>
+            <property name="shadow_type">GTK_SHADOW_OUT</property>
+          </widget>
+          <packing>
+            <property name="x">126</property>
+            <property name="y">145</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkButton" id="BotonEnvio">
+            <property name="width_request">96</property>
+            <property name="height_request">51</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="label" translatable="yes">gtk-execute</property>
+            <property name="use_stock">True</property>
+            <property name="response_id">0</property>
+            <signal name="clicked" handler="on_BotonEnvio_clicked"/>
+          </widget>
+          <packing>
+            <property name="x">127</property>
+            <property name="y">194</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="GtkWindow" id="VentanaSuspension">
+    <property name="extension_events">GDK_EXTENSION_EVENTS_ALL</property>
+    <property name="type">GTK_WINDOW_POPUP</property>
+    <property name="title" translatable="yes">Tiempo Admin</property>
+    <signal name="destroy" handler="on_VentanaSuspension_destroy"/>
+    <child>
+      <widget class="GtkFixed" id="fixed2">
+        <property name="visible">True</property>
+        <child>
+          <widget class="GtkLabel" id="EtiquetaAdminPrincipal">
+            <property name="width_request">100</property>
+            <property name="height_request">43</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Administrador</property>
+          </widget>
+          <packing>
+            <property name="x">300</property>
+            <property name="y">230</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkLabel" id="EtiquetaAdminUser">
+            <property name="width_request">87</property>
+            <property name="height_request">28</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Admin</property>
+          </widget>
+          <packing>
+            <property name="x">218</property>
+            <property name="y">315</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkLabel" id="EtiquetaAdminClave">
+            <property name="width_request">78</property>
+            <property name="height_request">28</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Clave</property>
+          </widget>
+          <packing>
+            <property name="x">225</property>
+            <property name="y">391</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkEntry" id="EntradaAdminClave">
+            <property name="width_request">100</property>
+            <property name="height_request">29</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+          </widget>
+          <packing>
+            <property name="x">340</property>
+            <property name="y">390</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkEntry" id="EntradaAdminUser">
+            <property name="width_request">100</property>
+            <property name="height_request">29</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+          </widget>
+          <packing>
+            <property name="x">339</property>
+            <property name="y">314</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkButton" id="BotonAdmin">
+            <property name="width_request">94</property>
+            <property name="height_request">38</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="label" translatable="yes">gtk-ok</property>
+            <property name="use_stock">True</property>
+            <property name="response_id">0</property>
+            <signal name="clicked" handler="on_BotonAdmin_clicked"/>
+          </widget>
+          <packing>
+            <property name="x">395</property>
+            <property name="y">472</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkImage" id="image2">
+            <property name="width_request">105</property>
+            <property name="height_request">212</property>
+            <property name="visible">True</property>
+            <property name="pixbuf">geeks.PNG</property>
+          </widget>
+          <packing>
+            <property name="x">494</property>
+            <property name="y">218</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</glade-interface>
