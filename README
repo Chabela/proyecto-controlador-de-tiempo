@@ -1,0 +1,5 @@
+///////////////////////////////////////////////
+Proyecto controlador de tiempo
+///////////////////////////////////////////////
+
+Este proyecto esta desarrollado en python con la ayuda de la libreria de pygtk y pygame esta preparado para correr en cualquier plataforma que tenga las librerias mencionadas.
